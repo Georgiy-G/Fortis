@@ -1,0 +1,509 @@
+@import "bourbon"
+@import "vars.sass"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+
+body
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.35em
+	font-family: "RobotoLight", sans-serif
+	overflow-x: hidden
+
+.hidden
+	display: none
+
+*::-webkit-input-placeholder
+	color: #4a4949
+	opacity: 1
+	font-size: 20px
+	font-weight: 300
+	line-height: 20px
+
+
+*:-moz-placeholder
+	color: #4a4949
+	opacity: 1
+	font-size: 20px
+	font-weight: 300
+	line-height: 20px
+
+
+*::-moz-placeholder
+	color: #4a4949
+	opacity: 1
+	font-size: 20px
+	font-weight: 300
+	line-height: 20px
+
+
+*:-ms-input-placeholder
+	color: #4a4949
+	opacity: 1
+	font-size: 20px
+	font-weight: 300
+	line-height: 20px
+
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+ul, li, p, h1, h2
+	margin: 0
+	padding: 0
+li
+	list-style: none
+h1
+	text-align: center
+	color: #00718f
+	font-size: 39px
+	font-weight: 300
+	line-height: 40px
+	text-transform: uppercase
+h2
+	text-align: center
+	color: #144c5f
+	font-size: 32px
+	font-weight: 300
+	line-height: 32px
+.container
+	width: 980px
+.navigation
+	background: url(../img/nav-background.jpg) 0 0 no-repeat
+	width: 648px
+	height: 1100px
+	position: fixed
+	z-index: 2
+	display: none
+	.icon-close
+		position: absolute
+		background: url(../img/icon-close-menu.svg) 0 0 no-repeat
+		top: 85px
+		right: 75px
+		width: 25px
+		height: 25px
+		cursor: pointer
+		transform: rotate(0)
+		transition: transform .3s
+	.menu-list
+		padding-top: 200px
+		padding-left: 90px
+		padding-right: 70px
+		li
+			border-bottom: 1px solid #23667c
+			a
+				font-size: 22px
+				font-weight: 400
+				line-height: 22px
+				text-transform: uppercase
+				color: #f2fafc
+				font-family: "RobotoRegular", sans-serif
+				text-decoration: none
+				padding: 22px
+				padding-right: 0
+				padding-left: 25px
+				display: block
+				&:hover
+					color: #45bcd8
+.ask-question-nav
+	position: fixed
+	top: 0
+	right: 0
+	width: 648px
+	height: 1100px
+	background-color: whitesmoke
+	opacity: 0.94
+	z-index: 2
+	display: none
+	.icon-question
+		position: absolute
+		background: url(../img/icon-search-lg.svg) 0 0 no-repeat
+		top: 60px
+		left: 100px
+		width: 49px
+		height: 49px
+	.icon-hidden
+		position: absolute
+		background: url(../img/icon-hidden.svg) 0 0 no-repeat
+		top: 65px
+		right: 60px
+		width: 14px
+		height: 30px
+		cursor: pointer
+	form
+		margin-top: 150px
+		margin-left: 100px
+		.head-question
+			color: #057f9c
+			font-size: 37px
+			font-weight: 400
+			line-height: 46px
+			margin-bottom: 30px
+		input
+			color: #4a4949
+			font-size: 20px
+			font-weight: 300
+			line-height: 20px
+			width: 260px
+			outline: none
+			border: none
+			border-bottom: 1px solid #cacaca
+			padding-top: 20px
+			padding-bottom: 20px
+			padding-right: 20px
+			margin-bottom: 20px
+			background-color: whitesmoke
+			opacity: 0.94
+		input[type="submit"]
+			width: 201px
+			height: 52px
+			background-color: #057a99
+			background-image: linear-gradient(to right, #057a99 0%, #09b1bb 100%)
+			box-shadow: 0 7px 27px rgba(0, 113, 143, 0.43)
+			color: white
+			font-size: 19px
+			font-weight: 300
+			line-height: 44px
+			padding: 0
+			border-radius: 50px
+			margin-top: 30px
+			border: none
+			&:hover
+				box-shadow: 0 7px 27px rgba(0, 113, 143, 0.63)
+			&:active
+				box-shadow: 0 7px 27px rgba(0, 113, 143, 1)
+.header
+	background: url(../img/main-background.jpg) 0 0 no-repeat
+	padding-bottom: 250px
+	background-size: 110% 100%
+	
+	.header-top
+		margin-bottom: 190px
+		.header__menu
+			float: left
+			margin-top: 80px
+			margin-left: 20px
+			.menu__icon
+				background: url(../img/icon-nav.png) 0 0 no-repeat
+				width: 22px
+				height: 16px
+				display: inline-block
+				vertical-align: middle
+				margin-right: 20px
+				cursor: pointer
+			.menu__text
+				font-size: 16px
+				font-weight: 400
+				line-height: 16px
+				text-transform: uppercase
+				color: #057a99
+				vertical-align: middle
+				font-family: "RobotoRegular", sans-serif
+		.header__logo
+			float: left
+			margin-left: 240px
+			margin-top: 40px
+		.header__phone
+			float: right
+			margin-top: 90px
+			margin-right: 30px
+			p
+				color: #057a99
+				font-size: 23px
+				font-weight: 300
+				line-height: 22px
+	.main
+		position: relative
+		.ask-question
+			position: absolute
+			transform: rotate(90deg)
+			display: inline-block
+			right: -65px
+			top: 0
+			color: #057a99
+			font-size: 16px
+			font-weight: 400
+			line-height: 22px
+			font-family: "RobotoRegular", sans-serif
+			text-transform: uppercase
+			text-decoration: none
+			border: 1px solid #057a99
+			border-radius: 50px
+			padding: 8px
+			padding-left: 18px
+			padding-right: 18px
+			&:hover
+				background-color: #057a99
+				color: #ffffff
+		.main__cost
+			background-image: linear-gradient(to bottom, #f5f5f5 70%, #FFFFFF 100%);
+			box-shadow: 0 9px 14px rgba(0, 113, 143, 0.17)
+			margin-top: 60px
+			p
+				text-align: center
+				color: #00718f
+				font-family: "RobotoBlack", sans-serif
+				font-size: 18px
+				font-weight: 900
+				line-height: 22px
+				padding-top: 30px
+				padding-bottom: 20px
+			span
+				text-align: center
+				color: #354e55
+				font-size: 18px
+				font-weight: 300
+				line-height: 22px
+				display: block
+				margin-bottom: 20px
+			.cost__blocks
+				font-size: 0
+				padding: 0 110px
+				.cost_block
+					display: inline-block
+					vertical-align: top
+					width: 230px
+					line-height: 95px
+					background-color: #fefefe
+					border: 1px solid #fefefe
+					border-radius: 10px
+					margin-right: 20px
+					margin-bottom: 20px
+					position: relative
+					cursor: pointer
+					&:nth-child(3n)
+						margin-right: 0
+					&:hover
+						box-shadow: 0 1px 16px rgba(255, 255, 255, 0.45)
+						background: #e3f1f5
+						border: 1px solid #cbe5eb
+						fill: red
+					&:active
+						background-color: #08a5b4
+						box-shadow: 0 1px 16px rgba(8, 168, 182, 0.3)
+						color: #ffffff
+						.svg-logo
+							fill: #ffffff
+					&:active .cost__text
+						color: #ffffff
+					span
+						font-size: 14px
+						vertical-align: middle
+						display: block
+						text-align: right
+						margin-bottom: 0
+						line-height: 95px
+						margin-right: 20px
+						.svg-logo
+							vertical-align: middle
+							fill: #057d9b
+					.cost__text
+						position: absolute
+						top: 30px
+						left: 30px
+						line-height: 19px
+						text-align: left
+					.position-center
+						top: 40px
+			.cost-forms
+				padding-left: 160px
+
+				input
+					color: #505050
+					font-size: 13px
+					font-weight: 400
+					line-height: 23px
+					font-family: "RobotoRegular", sans-serif
+					width: 205px
+					outline: none
+					border: none
+					border-bottom: 1px solid #cacaca
+					padding-top: 10px
+					padding-bottom: 10px
+					padding-left: 5px
+					padding-right: 20px
+					margin-bottom: 25px
+					margin-right: 50px
+					&:last-child
+						margin-right: 0
+				input[type="submit"]
+					width: 164px
+					height: 52px
+					background-color: #057a99
+					background-image: linear-gradient(to right, #057a99 0%, #09b1bb 100%)
+					box-shadow: 0 7px 27px rgba(0, 113, 143, 0.43)
+					border-radius: 50px
+					color: #fbfbfb
+					padding: 0
+					font-size: 15px
+					font-weight: 400
+					line-height: 15px
+					margin-bottom: 0
+					border: none
+					&:hover
+						box-shadow: 0 7px 27px rgba(0, 113, 143, 0.63)
+					&:active
+						box-shadow: 0 7px 27px rgba(0, 113, 143, 0.83)
+				*::-webkit-input-placeholder
+					color: #505050
+					opacity: 1
+					font-size: 13px
+					font-weight: 300
+					line-height: 13px
+				*:-moz-placeholder
+					color: #505050
+					opacity: 1
+					font-size: 13px
+					font-weight: 300
+					line-height: 13px
+				*::-moz-placeholder
+					color: #505050
+					opacity: 1
+					font-size: 13px
+					font-weight: 300
+					line-height: 13px
+				*:-ms-input-placeholder
+					color: #505050
+					opacity: 1
+					font-size: 13px
+					font-weight: 300
+					line-height: 13px
+.about-insurance
+	padding-top: 100px
+	padding-bottom: 100px
+	h2
+		margin-bottom: 40px
+	.about__block
+		background-color: #f3f9fb
+		border: 1px solid #dce8ea
+		box-shadow: 0 26px 50px rgba(56, 205, 255, 0.14)
+		.about-name
+			float: left
+			width: 275px
+			ul
+				margin-top: 35px
+				li
+					padding-left: 15px
+					width: 230px
+
+					a
+						padding: 12px
+						text-decoration: none
+						display: block
+						border: 2px solid transparent
+						span
+							vertical-align: middle
+							display: inline-block
+							width: 65px
+							text-align: center
+							&:nth-child(2n)
+								width: auto
+								
+							.svg-logo
+								fill: #057d9b
+						&:hover
+							border: 2px solid #08a5b4
+							border-radius: 50px
+		.about-description
+			float: left
+			width: 673px
+			.description-blocks
+				.description__text
+					float: left
+					width: 395px
+					padding-left: 10px
+					padding-right: 30px
+					.head-description
+						color: #144c5f
+						font-size: 37px
+						font-weight: 300
+						line-height: 37px
+						margin-top: 50px
+						margin-bottom: 40px
+					.text-description
+						color: #3a3a3a
+						font-size: 14px
+						font-weight: 300
+						line-height: 21px
+
+				.description__img
+					float: right
+					width: 275px
+					img
+						width: 100%
+						height: 100%
+.work-bg
+	height: 300px
+	margin-top: -100px
+	background-image: linear-gradient(to bottom, #F4F9FA 50%, #e8f2f5 100%)
+.works
+	background: url(../img/work-background.jpg) 0 0 no-repeat
+	background-size: 110% 100%
+	padding-top: 150px
+	padding-bottom: 200px
+	h2
+		margin-bottom: 100px
+	.works-blocks
+		font-size: 0
+		text-align: justify
+		padding: 0 100px
+		&:after
+			content: ""
+			width: 100%
+			height: 0
+			display: inline-block
+		.works-block
+			display: inline-block
+			font-size: 18px
+			vertical-align: top
+			.icon-works
+				text-align: center
+				margin-bottom: 25px
+			.icon-circle
+				text-align: center
+				position: relative
+				margin-bottom: 25px
+				&:after
+					content: ""
+					position: absolute
+					background: url(../img/layer-work.png) 0 0 no-repeat
+					top: 27px
+					left: -130px
+					width: 400px
+					height: 1px
+				span
+					position: absolute
+					top: 15px
+					left: 50px
+					color: white
+					font-size: 30px
+					font-weight: 300
+					line-height: 30px
+			.last-layer
+				&:after
+					background: none
+			
+			
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+//ALWAYS END
+@import "media"
