@@ -73,6 +73,28 @@ h2
 	font-size: 32px
 	font-weight: 300
 	line-height: 32px
+.section
+	width: 100%
+	min-width: 980px
+	overflow: hidden
+	position: relative
+	z-index: 2
+	min-height: 600px
+	height: 100vh
+	background-size: cover
+	.wrap
+		max-width: 980px
+		position: relative
+		z-index: 2
+		height: 100%
+		margin: 0 auto
+		.m-wrap
+			width: 100%
+			position: absolute
+			height: 600px
+			top: 50%
+			margin-top: -300px
+
 .container
 	width: 980px
 .navigation
@@ -175,17 +197,17 @@ h2
 			border-radius: 50px
 			margin-top: 30px
 			border: none
+			transition: box-shadow 2s
 			&:hover
 				box-shadow: 0 7px 27px rgba(0, 113, 143, 0.63)
 			&:active
 				box-shadow: 0 7px 27px rgba(0, 113, 143, 1)
 .header
 	background: url(../img/main-background.jpg) 0 0 no-repeat
-	padding-bottom: 250px
+	padding-bottom: 135px
 	background-size: 110% 100%
-
 	.header-top
-		margin-bottom: 190px
+		margin-bottom: 30px
 		.header__menu
 			float: left
 			margin-top: 80px
@@ -214,13 +236,16 @@ h2
 			float: right
 			margin-top: 90px
 			margin-right: 30px
-			p
+			a
 				color: #057a99
 				font-size: 23px
 				font-weight: 300
 				line-height: 22px
+				text-decoration: none
 	.main
 		position: relative
+		h1
+			margin-bottom: 55px
 		.ask-question
 			position: absolute
 			transform: rotate(90deg)
@@ -228,7 +253,7 @@ h2
 			right: -65px
 			top: 0
 			color: #057a99
-			font-size: 16px
+			font-size: 14px
 			font-weight: 400
 			line-height: 22px
 			font-family: "RobotoRegular", sans-serif
@@ -245,7 +270,6 @@ h2
 		.main__cost
 			background-image: linear-gradient(to bottom, #f5f5f5 70%, #FFFFFF 100%);
 			box-shadow: 0 9px 14px rgba(0, 113, 143, 0.17)
-			margin-top: 60px
 			p
 				text-align: center
 				color: #00718f
@@ -331,6 +355,7 @@ h2
 					padding-right: 20px
 					margin-bottom: 25px
 					margin-right: 50px
+					background: transparent
 					&:last-child
 						margin-right: 0
 				input[type="submit"]
@@ -376,10 +401,10 @@ h2
 					font-weight: 300
 					line-height: 13px
 .about-insurance
-	padding-top: 100px
-	padding-bottom: 100px
+	background-size: 100% 100%
+	background-image: linear-gradient(to bottom, #FFFFFF 60%, #e8f2f5 100%)
 	h2
-		margin-bottom: 40px
+		margin-bottom: 20px
 	.about__block
 		background-color: #f3f9fb
 		border: 1px solid #dce8ea
@@ -412,12 +437,13 @@ h2
 							border: 2px solid #08a5b4
 							border-radius: 50px
 		.about-description
-			float: left
-			width: 673px
+			float: right
+			width: 700px
+
 			.description-blocks
 				.description__text
 					float: left
-					width: 395px
+					width: 400px
 					padding-left: 10px
 					padding-right: 30px
 					.head-description
@@ -435,19 +461,12 @@ h2
 
 				.description__img
 					float: right
-					width: 275px
+					width: 300px
 					img
 						width: 100%
 						height: 100%
-.work-bg
-	height: 300px
-	margin-top: -45px
-	background-image: linear-gradient(to bottom, #FDFEFE 50%, #eaf3f6 100%);
 .works
 	background: url(../img/work-background.jpg) 0 0 no-repeat
-	background-size: 125% 100%
-	padding-top: 150px
-	padding-bottom: 200px
 	h2
 		margin-bottom: 100px
 	.works-blocks
@@ -483,18 +502,19 @@ h2
 				span
 					position: absolute
 					top: 15px
-					left: 63px
+					left: 50%
+					transform: translateX(-50%)
 					color: white
 					font-size: 30px
 					font-weight: 300
 					line-height: 30px
+			.works-text
+				text-align: center
 			.last-layer
 				&:after
 					background: none
 .services
 	background: url(../img/clients-background.jpg) 0 0 no-repeat
-	padding-top: 250px
-	padding-bottom: 250px
 	.services-block1
 		margin: 0 auto
 		width: 772px
@@ -602,8 +622,6 @@ h2
 					left: 14px
 .price
 	position: relative
-	padding-top: 330px
-	padding-bottom: 260px
 	background: url(../img/price-background.jpg) 0 0 no-repeat
 	background-size: 100% 100%
 	h2
@@ -715,6 +733,285 @@ h2
 				font-size: 13px
 				font-weight: 300
 				line-height: 13px
+.polis
+	h2
+		margin-bottom: 20px
+		b
+			font-family: "RobotoBold", sans-serif
+	.polis-blocks
+		text-align: justify
+		padding: 0 100px
+		font-size: 0
+		margin-bottom: 20px
+		&:after
+			content: ""
+			display: inline-block
+			width: 100%
+			height: 0
+		.polis-block
+			display: inline-block
+			vertical-align: top
+			width: 341px
+			border-radius: 5px
+			.polis-block__inline1
+				background-image: linear-gradient(40deg, #3f7692 0%, #08a5b4 100%)
+				height: 200px
+				position: relative
+				.icon-polis
+					position: absolute
+					left: 50%
+					bottom: 110px
+					transform: translateX(-50%)
+				p
+					text-align: center
+					color: #d2ebee
+					font-weight: 300
+					font-size: 22px
+					line-height: 29px
+					padding-top: 110px
+					span
+						color: white
+						font-weight: 700
+						text-transform: uppercase
+						font-family: "RobotoBold", sans-serif
+			.polis-block__inline2
+				background-color: whitesmoke
+				box-shadow: 0 9px 14px rgba(0, 113, 143, 0.17)
+				height: 200px
+				p
+					color: #3b4d5a
+					font-size: 15px
+					font-weight: 300
+					line-height: 23px
+					text-align: center
+					padding: 30px 50px 0 50px
+	.icon-info
+		text-align: center
+		display: block
+		margin-bottom: 20px
+		cursor: pointer
+	.polis-info
+		text-align: center
+		padding: 0 200px
+		color: #286788
+		font-size: 16px
+		font-weight: 300
+		line-height: 23px
+.about-company
+	background: url(../img/about-company-background.jpg) 0 0 no-repeat
+	background-size: 100% 90%
+	margin-bottom:  200px
+	h1
+		color: white
+		padding-top: 80px
+		margin-bottom: 40px
+	.about-company__columns
+		text-align: justify
+		padding: 0 80px
+		font-size: 0
+		&:after
+			content: ""
+			display: inline-block
+			width: 100%
+			height: 0
+		.about-company__column
+			display: inline-block
+			p
+				color: #c1e0eb
+				font-weight: 300
+				line-height: 34px
+				font-size: 24px
+				text-align: center
+				span
+					font-size: 31px
+	.slider-employees
+		#horiz_container_outer
+			border: none
+			width: 980px
+			height: 320px
+			#horiz_container
+				width: 1700px
+				text-align: justify
+				&:after
+					display: inline-block
+					content: ""
+					width: 100%
+					height: 0
+				.employees
+					text-align: center
+					display: inline-block
+					.contacts-employees
+						padding-top: 10px
+						background: #165064
+						p
+							font-weight: 300
+							line-height: 24px
+							color: #8b979a
+							font-size: 14px
+							display: block
+							padding-bottom: 5px
+						.contacts__head
+							font-weight: 300
+							line-height: 24px
+							color: white
+							font-size: 24px
+							display: block
+							padding-bottom: 5px
+	#scrollbar
+		width: 980px
+		#track
+			width: 980px
+			height: 2px
+			top: 10px
+			background-color: #a6ced7
+			#dragBar
+				width: 40px
+				height: 41px
+				top: -17px !important
+				background: url(../img/slider-icon.png) 0 0 no-repeat
+.maps
+	.wrap
+		width: 100%
+		max-width: 100%
+		padding: 0
+		.map
+			.map__adress
+				float: left
+				width: 318px
+				position: relative
+				.adress__photo
+					background: #a3a7a8
+					height: 227px
+				.adress__contacts
+					padding-left: 15px
+					background: #057f9c
+					padding-bottom: 10px
+					p
+						color: white
+						font-size: 19px
+						font-weight: 300
+						line-height: 44px
+					span
+						color: white
+						font-size: 15px
+						font-weight: 300
+						line-height: 20px
+				.marker
+					position: absolute
+					content: ""
+					width: 0
+					height: 0
+					bottom: -20px
+					left: 45px
+					border-left: 20px solid transparent
+					border-top: 20px solid #057f9c
+					border-right: 20px solid transparent
+			.map__form
+				float: right
+				width: 280px
+				margin-right: 20px
+				opacity: 0.91
+				background-color: white
+				box-shadow: 0 5px 32px rgba(0, 0, 0, 0.33)
+				text-align: center
+				p
+					color: #057f9c
+					font-size: 17px
+					font-weight: 300
+					line-height: 24px
+					margin-top: 25px
+					margin-bottom: 15px
+				input
+					color: #4a4949
+					font-size: 13px
+					font-weight: 300
+					line-height: 
+					width: 243px
+					outline: none
+					border: none
+					border-bottom: 1px solid #cacaca
+					padding-top: 20px
+					padding-bottom: 15px
+					padding-left: 15px
+					padding-right: 15px
+					margin-bottom: 15px
+					opacity: 0.91
+					background-color: white
+					opacity: 0.94
+				input[type="submit"]
+					width: 201px
+					height: 52px
+					background-color: #057a99
+					background-image: linear-gradient(to right, #057a99 0%, #09b1bb 100%)
+					box-shadow: 0 7px 27px rgba(0, 113, 143, 0.43)
+					color: white
+					font-size: 19px
+					font-weight: 300
+					line-height: 44px
+					padding: 0
+					border-radius: 50px
+					margin-top: 10px
+					margin-bottom: 20px
+					border: none
+					transition: box-shadow 2s
+					&:hover
+						box-shadow: 0 7px 27px rgba(0, 113, 143, 0.63)
+					&:active
+						box-shadow: 0 7px 27px rgba(0, 113, 143, 1)
+				*::-webkit-input-placeholder
+					color: #4a4949
+					opacity: 1
+					font-size: 13px
+					font-weight: 300
+					line-height: 13px
+				*:-moz-placeholder
+					color: #4a4949
+					opacity: 1
+					font-size: 13px
+					font-weight: 300
+					line-height: 13px
+				*::-moz-placeholder
+					color: #4a4949
+					opacity: 1
+					font-size: 13px
+					font-weight: 300
+					line-height: 13px
+				*:-ms-input-placeholder
+					color: #4a4949
+					opacity: 1
+					font-size: 13px
+					font-weight: 300
+					line-height: 13px
+				.form__phone
+					background-color: #057f9c
+					height: 72px
+					a
+						color: white
+						font-size: 23px
+						font-weight: 300
+						line-height: 72px
+						text-decoration: none
+
+		.footer
+			text-align: justify
+			background-color: #144c5f
+			padding: 0 100px
+			padding-bottom: 50px
+			&:after
+				content: ""
+				display: inline-block
+				width: 100%
+				height: 0
+			.column1
+				display: inline-block
+				p
+					color: white
+					font-size: 14px
+					font-weight: 300
+					line-height: 44px
+
+
+
 
 
 
