@@ -40,7 +40,794 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
-
+	.mobile
+		h1
+			font-size: 26px
+			line-height: 26px
+		.navigation-mob
+			background: url(../img/nav-background.jpg) 0 0 no-repeat
+			background-size: 100% 120%
+			position: fixed
+			z-index: 5
+			width: 100%
+			left: -100%
+			.icon-close
+				position: absolute
+				background: url(../img/icon-close-menu.svg) 0 0 no-repeat
+				top: 25px
+				left: 30px
+				width: 25px
+				height: 25px
+				cursor: pointer
+				transform: rotate(0)
+				transition: transform .3s
+			.menu-list
+				padding: 0 15px
+				padding-top: 50px
+				display: block
+				margin-bottom: 50px
+				li
+					border-bottom: 1px solid #23667c
+					
+					a
+						font-size: 18px
+						font-weight: 400
+						line-height: 18px
+						text-transform: uppercase
+						color: #f2fafc
+						font-family: "RobotoRegular", sans-serif
+						text-decoration: none
+						padding: 15px
+						padding-right: 0
+						padding-left: 40px
+						display: block
+						&:hover
+							color: #45bcd8
+			.navigation__phone
+				padding-left: 55px
+				padding-bottom: 30px
+				a
+					color: white
+					font-size: 21px
+					font-weight: 300
+					line-height: 21px
+		.ask-question-nav-mob
+			padding-bottom: 40px
+			position: fixed
+			top: 0
+			background-color: whitesmoke
+			opacity: 0.97
+			z-index: 5
+			width: 100%
+			right: -100%
+			.icon-close
+				position: absolute
+				background: url(../img/ask-question-icon-mob.png) 0 0 no-repeat
+				top: 30px
+				left: 55px
+				width: 49px
+				height: 49px
+			form
+				margin: 0 20px
+				margin-top: 100px
+				.head-question
+					color: #057f9c
+					font-size: 25px
+					font-weight: 400
+					line-height: 25px
+					margin-bottom: 20px
+				input
+					color: #4a4949
+					font-size: 20px
+					font-weight: 300
+					line-height: 20px
+					width: 100%
+					outline: none
+					border: none
+					border-bottom: 1px solid #cacaca
+					padding-top: 15px
+					padding-bottom: 15px
+					padding-right: 15px
+					margin-bottom: 15px
+					background-color: whitesmoke
+					opacity: 0.94
+				input[type="submit"]
+					width: 201px
+					height: 52px
+					background-color: #057a99
+					background-image: linear-gradient(to right, #057a99 0%, #09b1bb 100%)
+					box-shadow: 0 7px 27px rgba(0, 113, 143, 0.43)
+					color: white
+					font-size: 19px
+					font-weight: 300
+					line-height: 44px
+					padding: 0
+					border-radius: 50px
+					margin-top: 30px
+					border: none
+					transition: box-shadow 2s
+					&:hover
+						box-shadow: 0 7px 27px rgba(0, 113, 143, 0.63)
+					&:active
+						box-shadow: 0 7px 27px rgba(0, 113, 143, 1)
+		.header
+			background: url(../img/main-background.jpg) 0 0 no-repeat
+			background-size: 100% 50%
+			.header-top
+				text-align: justify
+				padding: 0 30px
+				margin-bottom: 25px
+				&:after
+					content: ""
+					display: inline-block
+					width: 100%
+					height: 0
+				.header-menu
+					vertical-align: middle
+					display: inline-block
+					.menu__icon
+						background: url(../img/icon-nav.png) 0 0 no-repeat
+						display: inline-block
+						width: 31px
+						height: 24px
+				.header__logo
+					vertical-align: middle
+					display: inline
+					text-align: center
+					img
+						width: 60%
+				.icon-search
+					vertical-align: middle
+					display: inline-block
+			.main
+				h1
+					margin-bottom: 15px
+				.main__text
+					text-align: center
+					color: #00718f
+					font-family: "RobotoBlack", sans-serif
+					font-size: 18px
+					font-weight: 900
+					line-height: 22px
+					margin-bottom: 15px
+				.cost__head
+					opacity: 0.68
+					background-color: #057c9a
+					height: 60px
+					p
+						transform: translateY(50%)
+						padding-top: 8px
+						color: white
+						font-size: 18px
+						font-weight: 300
+						line-height: 18px
+						text-align: center
+						font-family: "RobotoLight", sans-serif
+				.cost__blocks
+					text-align: justify
+					padding: 15px
+					padding-bottom: 0
+					background-color: #f2f1f1
+					&:after
+						display: inline-block
+						content: ""
+						width: 100%
+						height: 0
+						font-size: 0
+					.cost__block
+						display: inline-block
+						width: 45%
+						height: 68px
+						background-color: #fefefe
+						border: 1px solid #b0d6e0
+						border-radius: 9px
+						vertical-align: top
+						text-align: center
+						position: relative
+						margin-bottom: 20px
+						vertical-align: middle
+						&:active
+							background-color: #08a5b4
+							box-shadow: 0 1px 16px rgba(8, 168, 182, 0.3)
+							color: #ffffff
+							border: 1px solid #08a5b4
+						&:active p
+							color: #ffffff
+						p
+							color: #057d9b
+							margin: 0
+							padding: 0
+							font-family: "RobotoLight", sans-serif
+							font-size: 14px
+							font-weight: 300
+							line-height: 19px
+							vertical-align: middle
+							padding-top: 15px
+						.position-center
+							padding-top: 22px
+						span			
+							.svg-logo
+								position: absolute
+								top: 0
+								left: 0
+								width: 50%
+								height: 100%
+								color: #057d9b
+								transform: translateX(50%)
+								fill: #3d494b
+								opacity: 0.07
+					.active-block
+						background-color: #08a5b4
+						box-shadow: 0 1px 16px rgba(8, 168, 182, 0.3)
+						p
+							color: #ffffff
+						.svg-logo
+							fill: #ffffff !important
+						&:hover
+							background-color: #08a5b4
+							box-shadow: 0 1px 16px rgba(8, 168, 182, 0.3)
+							p
+								color: #ffffff
+							.svg-logo
+								fill: #ffffff !important
+				.cost-forms
+					background-color: #f2f1f1
+					text-align: center
+					margin-top: -2px
+					input
+						color: #505050
+						font-size: 19px
+						font-weight: 300
+						line-height: 
+						width: 200px
+						outline: none
+						border: none
+						border-bottom: 1px solid #cacaca
+						padding: 15px
+						margin-bottom: 15px
+						background-color: #f2f1f1
+						text-align: center
+					input[type="submit"]
+						width: 201px
+						height: 52px
+						background-color: #057a99
+						background-image: linear-gradient(to right, #057a99 0%, #09b1bb 100%)
+						box-shadow: 0 7px 27px rgba(0, 113, 143, 0.43)
+						color: white
+						font-size: 19px
+						font-weight: 300
+						line-height: 44px
+						padding: 0
+						border-radius: 50px
+						margin-top: 10px
+						margin-bottom: 40px
+						border: none
+						transition: box-shadow 2s
+						&:active
+							box-shadow: 0 7px 27px rgba(0, 113, 143, 1)
+					*::-webkit-input-placeholder
+						color: #4a4949
+						opacity: 1
+						font-size: 19px
+						font-weight: 300
+						line-height: 19px
+						text-align: center
+					*:-moz-placeholder
+						color: #4a4949
+						opacity: 1
+						font-size: 19px
+						font-weight: 300
+						line-height: 19px
+						text-align: center
+					*::-moz-placeholder
+						color: #4a4949
+						opacity: 1
+						font-size: 19px
+						font-weight: 300
+						line-height: 19px
+						text-align: center
+					*:-ms-input-placeholder
+						color: #4a4949
+						opacity: 1
+						font-size: 19px
+						font-weight: 300
+						line-height: 19px
+						text-align: center
+		.about-insurance
+			padding: 0 20px
+			padding-top: 20px
+			padding-bottom: 20px
+			h1
+				text-transform: none
+			.head-description
+				color: #144c5f
+				font-size: 26px
+				font-weight: 300
+				line-height: 26px
+				margin-bottom: 20px
+			.text-description
+				color: #3a3a3a
+				font-family: Roboto
+				font-size: 14px
+				font-weight: 300
+				line-height: 21px
+		.works
+			background: url(../img/work-background-mob.jpg) 0 0 no-repeat
+			background-size: cover
+			padding: 0 20px
+			padding-top: 40px
+			h1
+				margin-bottom: 20px
+			.works-block
+				text-align: justify
+				padding-bottom: 30px
+				margin-bottom: 0
+				&:after
+					display: inline-block
+					content: ""
+					width: 100%
+					height: 0
+					margin-bottom: 0
+				.works__circle
+					display: inline-block
+					vertical-align: middle
+				.works__text
+					display: inline-block
+					width: 40%
+					text-align: center
+					vertical-align: middle
+					p
+						color: #00718f
+						font-size: 18px
+						font-weight: 300
+						line-height: 22px
+				.works__icon
+					display: inline-block
+					vertical-align: middle
+					text-align: right
+					width: 20%
+					img
+						width: 70%
+		.services
+			padding: 15px
+			background: url(../img/clients-background-mob.jpg) 0 0 no-repeat
+			background-size: 100% 120%
+			.services-block1
+				background-color: white
+				padding-bottom: 25px
+				padding-top: 15px
+				box-shadow: 0 3px 24px rgba(108, 205, 223, 0.75)
+				.block1-icon
+					float: left
+					margin-left: 10px
+					width: 20%
+					img
+						width: 100%
+						height: auto
+				.block1-text
+					float: right
+					margin-right: 10px
+					.head-block1
+						color: #116278
+						font-size: 22px
+						font-weight: 300
+						line-height: 25px
+						margin-bottom: 15px
+					p
+						color: #126379
+						font-size: 16px
+						font-weight: 300
+						line-height: 21px
+			.services-block2
+				background-color: rgba(10, 99, 123, 0.14)
+				padding-top: 20px
+				padding-bottom: 20px
+				.head-block2
+					color: white
+					font-size: 23px
+					font-weight: 300
+					line-height: 30px
+					margin-bottom: 25px
+				.block2-inline
+					margin-bottom: 20px
+					.counts-company
+						display: inline-block
+						float: left
+						margin-left: 0px
+						width: 40%
+						img
+							width: 100%
+							height: auto
+					.column-text
+						float: right
+						width: 55%
+						p
+							color: white
+							font-size: 16px
+							font-weight: 300
+							line-height: 23px
+				.block2-inline-clients
+					.head__clients
+						color: #ffffff
+						margin-bottom: 20px
+					p
+						text-align: center
+						color: white
+						font-size: 16px
+						font-weight: 300
+						line-height: 23px
+			.services-block3
+				padding: 0 15px
+				background-color: #0e5b70
+				padding-top: 20px
+				padding-bottom: 15px
+				.head-block3
+					text-align: center
+					color: white
+					font-size: 23px
+					font-weight: 300
+					line-height: 30px
+					margin-bottom: 20px
+				.button-block3
+					text-align: center
+					a
+						width: 152px
+						height: 43px
+						background-color: #057a99
+						background-image: linear-gradient(to right, #057a99 0%, #09b1bb 100%)
+						box-shadow: 0 7px 27px rgba(0, 113, 143, 0.43)
+						color: #fbfbfb
+						font-size: 18px
+						font-weight: 300
+						line-height: 43px
+						display: inline-block
+						border-radius: 50px
+						text-decoration: none
+						position: relative
+						padding-left: 15px
+						&:active
+							box-shadow: 0 7px 27px rgba(0, 113, 143, 0.93)
+						span
+							position: absolute
+							top: 0
+							left: 14px
+		.price
+			padding: 25px 0
+			h1
+				line-height: 35px
+				text-transform: none
+				margin-bottom: 20px
+			.cost__head
+				background-color: #08a5b4
+				p
+					color: white
+					font-size: 18px
+					font-weight: 300
+					line-height: 23px
+					text-align: center
+					font-family: "RobotoLight", sans-serif
+			.cost__blocks
+				text-align: justify
+				padding: 15px
+				padding-bottom: 0
+				background-color: #ffffff
+				&:after
+					display: inline-block
+					content: ""
+					width: 100%
+					height: 0
+					font-size: 0
+				.cost__block
+					display: inline-block
+					width: 45%
+					height: 68px
+					background-color: #fefefe
+					border: 1px solid #b0d6e0
+					border-radius: 9px
+					vertical-align: top
+					text-align: center
+					position: relative
+					margin-bottom: 20px
+					vertical-align: middle
+					&:active
+						background-color: #08a5b4
+						box-shadow: 0 1px 16px rgba(8, 168, 182, 0.3)
+						color: #ffffff
+						border: 1px solid #08a5b4
+					&:active p
+						color: #fffff
+					p
+						margin: 0
+						padding: 0
+						font-family: "RobotoLight", sans-serif
+						font-size: 14px
+						font-weight: 300
+						line-height: 19px
+						vertical-align: middle
+						padding-top: 15px
+					.position-center
+						padding-top: 22px
+					span			
+						.svg-logo
+							position: absolute
+							top: 0
+							left: 0
+							width: 50%
+							height: 100%
+							transform: translateX(50%)
+							fill: #3d494b
+							opacity: 0.07
+			.cost-forms
+				text-align: center
+				input[type="submit"]
+					width: 164px
+					height: 52px
+					font-family: "RobotoRegular", sans-serif
+					background-color: #08a5b4
+					box-shadow: 0 7px 27px rgba(0, 113, 143, 0.43)
+					border-radius: 50px
+					color: #fbfbfb
+					padding: 0
+					font-size: 16px
+					font-weight: 400
+					line-height: 52px
+					margin-bottom: 0
+					border: none
+					outline: none
+					&:hover
+						box-shadow: 0 7px 27px rgba(0, 113, 143, 0.63)
+					&:active
+						box-shadow: 0 7px 27px rgba(0, 113, 143, 0.83)
+		.polis
+			padding: 15px
+			margin: 0 auto
+			h1
+				text-transform: none
+				margin-bottom: 15px
+				line-height: 30px
+			.polis-block
+				display: inline-block
+				border-radius: 5px
+				text-align: center
+				margin-bottom: 20px
+				.polis-block__inline1
+					background-image: linear-gradient(40deg, #3f7692 0%, #08a5b4 100%)
+					height: 200px
+					position: relative
+					.icon-polis
+						position: absolute
+						left: 50%
+						bottom: 110px
+						transform: translateX(-50%)
+					p
+						text-align: center
+						color: #d2ebee
+						font-weight: 300
+						font-size: 18px
+						line-height: 23px
+						padding-top: 110px
+						span
+							color: white
+							font-weight: 700
+							text-transform: uppercase
+							font-family: "RobotoBold", sans-serif
+				.polis-block__inline2
+					background-color: whitesmoke
+					box-shadow: 0 9px 14px rgba(0, 113, 143, 0.17)
+					height: 200px
+					p
+						color: #3b4d5a
+						font-size: 15px
+						font-weight: 300
+						line-height: 23px
+						text-align: center
+						padding: 50px 50px 0 50px
+			.icon-info
+				text-align: center
+				margin-bottom: 20px
+			.polis-info
+				text-align: center
+				color: #286788
+				font-size: 16px
+				font-weight: 300
+				line-height: 23px
+		.about-company
+			background: url(../img/about-company-background-mob.jpg) 0 0 no-repeat
+			background-size: 100% 100%
+			text-align: center
+			padding-top: 20px
+			padding-bottom: 20px
+			h1
+				text-transform: none
+				color: #ffffff
+				margin-bottom: 30px
+			p
+				color: #c1e0eb
+				font-weight: 300
+				line-height: 34px
+				font-size: 18px
+				margin-bottom: 25px
+				span
+					font-size: 30px
+				.about-company__font-size
+					font-size: 25px	
+		.employees
+			text-align: center
+			display: inline-block
+			background: #FFF
+			box-shadow: 1.5px 2.6px 22px rgba(0, 0, 0, 0.15)
+			.contacts-employees
+				padding-top: 10px
+				background: #165064
+				p
+					font-weight: 300
+					line-height: 16px
+					color: #8b979a
+					font-size: 16px
+					display: block
+					padding-bottom: 10px
+				.contacts__head
+					font-weight: 300
+					line-height: 20px
+					color: white
+					font-size: 20px
+					display: block
+					padding-bottom: 10px
+		.maps
+			padding-bottom: 20px
+			.maps__photo
+				img
+					width: 100%
+			.maps__info
+				background: #1e434c
+				.maps__contacts
+					padding-top: 20px
+					padding-bottom: 20px
+					padding-left: 90px
+					position: relative
+					.maps__icon
+						position: absolute
+						top: 21px
+						left: 38px
+						background: url(../img/maps-icon.png) 0 0 no-repeat
+						width: 30px
+						height: 34px
+					p
+						font-size: 18px
+						font-weight: 300
+						line-height: 23px
+						color: #ffffff
+						span
+							color: #aadfed
+				.maps-question
+					opacity: 0.87
+					background-color: rgba(30, 67, 76, 0.49)
+					color: #fff
+					text-align: center
+					padding-top: 20px
+					padding-bottom: 20px
+					position: relative
+					.question-icon
+						position: absolute
+						top: 16px
+						left: 20px
+						background: url(../img/map-question.png) 0 0 no-repeat
+						width: 41px
+						height: 29px
+					.question-icon2
+						position: absolute
+						top: 29px
+						right: 50px
+						background: url(../img/map-question2.png) 0 0 no-repeat
+						width: 13px
+						height: 9px
+					p
+						color: white
+						font-size: 26px
+						font-weight: 300
+						line-height: 24px
+				.maps-question-form
+					background-color: #f2f4f7
+					text-align: center
+					form
+						padding: 20px
+						input
+							color: #4a4949
+							font-size: 20px
+							font-weight: 300
+							line-height: 20px
+							width: 100%
+							outline: none
+							border: none
+							border-bottom: 1px solid #cacaca
+							padding: 20px
+							margin-bottom: 20px
+							background-color: whitesmoke
+							opacity: 0.94
+						input[type="submit"]
+							width: 201px
+							height: 52px
+							background-color: #057a99
+							background-image: linear-gradient(to right, #057a99 0%, #09b1bb 100%)
+							box-shadow: 0 7px 27px rgba(0, 113, 143, 0.43)
+							color: white
+							font-size: 19px
+							font-weight: 300
+							line-height: 44px
+							padding: 0
+							border-radius: 50px
+							margin-top: 30px
+							border: none
+							transition: box-shadow 2s
+							&:active
+								box-shadow: 0 7px 27px rgba(0, 113, 143, 1)
+					.maps-question-phone
+						background: #057f9c
+						padding: 20px 0
+						text-align: center
+						a
+							color: white
+							font-size: 25px
+							font-weight: 300
+							line-height: 25px
+			.maps__adress
+				background: #057f9c
+				display: inline-block
+				padding: 20px 20px 20px 50px
+				position: relative
+				.adress__photo
+					position: absolute
+					top: 35px
+					left: 15px
+					background: url(../img/maps-icon2.png) 0 0 no-repeat
+					width: 20px
+					height: 26px
+				.adress__contacts
+					p
+						color: white
+						font-size: 19px
+						font-weight: 300
+						line-height: 24px
+						padding-bottom: 20px
+					span
+						font-size: 15px
+						font-weight: 300
+						line-height: 24px
+						color: white
+				.marker
+					position: absolute
+					content: ""
+					width: 0
+					height: 0
+					bottom: -19px
+					left: 45px
+					border-left: 20px solid transparent
+					border-top: 20px solid #057f9c
+					border-right: 20px solid transparent
+		.footer
+			background: #057f9c
+			color: #ffffff
+			text-align: justify
+			padding: 0 15px
+			padding-top: 20px
+			font-size: 0
+			vertical-align: top
+			&:after
+				display: inline-block
+				content: ""
+				width: 100%
+				height: 0
+			p
+				color: white
+				font-size: 11px
+				font-weight: 300
+				line-height: 22px
+				display: inline-block
+				vertical-align: top
+			img
+				display: inline-block
+				vertical-align: top
+				width: 40%
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)

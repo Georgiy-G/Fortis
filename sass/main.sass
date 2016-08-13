@@ -99,11 +99,12 @@ h2
 	width: 980px
 .navigation
 	background: url(../img/nav-background.jpg) 0 0 no-repeat
+	left: -100%
 	width: 648px
 	height: 1100px
 	position: fixed
-	z-index: 2
-	display: none
+	z-index: 5
+	transition: left 1s
 	.icon-close
 		position: absolute
 		background: url(../img/icon-close-menu.svg) 0 0 no-repeat
@@ -113,7 +114,10 @@ h2
 		height: 25px
 		cursor: pointer
 		transform: rotate(0)
-		transition: transform .3s
+		transition: all .6s
+		&:hover
+			transform: rotate(90deg)
+			transition: all .6s
 	.menu-list
 		padding-top: 200px
 		padding-left: 90px
@@ -137,13 +141,13 @@ h2
 .ask-question-nav
 	position: fixed
 	top: 0
-	right: 0
+	right: -100%
 	width: 648px
 	height: 1100px
 	background-color: whitesmoke
 	opacity: 0.94
-	z-index: 2
-	display: none
+	z-index: 5
+	transition: right 1s
 	.icon-question
 		position: absolute
 		background: url(../img/icon-search-lg.svg) 0 0 no-repeat
@@ -183,6 +187,7 @@ h2
 			margin-bottom: 20px
 			background-color: whitesmoke
 			opacity: 0.94
+
 		input[type="submit"]
 			width: 201px
 			height: 52px
@@ -198,6 +203,7 @@ h2
 			margin-top: 30px
 			border: none
 			transition: box-shadow 2s
+			transition: all 1s
 			&:hover
 				box-shadow: 0 7px 27px rgba(0, 113, 143, 0.63)
 			&:active
@@ -221,6 +227,7 @@ h2
 					vertical-align: middle
 					margin-right: 20px
 					cursor: pointer
+					&:hover
 				.menu__text
 					font-size: 16px
 					font-weight: 400
@@ -248,6 +255,7 @@ h2
 			h1
 				margin-bottom: 55px
 			.ask-question
+				cursor: pointer
 				position: absolute
 				transform: rotate(90deg)
 				display: inline-block
@@ -291,7 +299,7 @@ h2
 				.cost__blocks
 					font-size: 0
 					padding: 0 110px
-					.cost_block
+					.cost__block
 						display: inline-block
 						vertical-align: top
 						width: 230px
@@ -323,6 +331,7 @@ h2
 							vertical-align: middle
 							display: block
 							text-align: right
+							color: #057d9b
 							margin-bottom: 0
 							line-height: 95px
 							margin-right: 20px
@@ -337,6 +346,20 @@ h2
 							text-align: left
 						.position-center
 							top: 40px
+					.active-block
+						background-color: #08a5b4
+						box-shadow: 0 1px 16px rgba(8, 168, 182, 0.3)
+						.cost__text
+							color: #ffffff 
+						.svg-logo
+							fill: #ffffff !important
+						&:hover
+							background-color: #08a5b4
+							box-shadow: 0 1px 16px rgba(8, 168, 182, 0.3)
+							.cost__text
+								color: #ffffff
+							.svg-logo
+								fill: #ffffff !important
 				.cost-forms
 					padding-left: 160px
 
@@ -373,6 +396,7 @@ h2
 						line-height: 15px
 						margin-bottom: 0
 						border: none
+						transition: all 1s
 						&:hover
 							box-shadow: 0 7px 27px rgba(0, 113, 143, 0.63)
 						&:active
@@ -468,6 +492,7 @@ h2
 							height: 100%
 	.works
 		background: url(../img/work-background.jpg) 0 0 no-repeat
+		background-size: cover
 		h2
 			margin-bottom: 100px
 		.works-blocks
@@ -516,6 +541,7 @@ h2
 						background: none
 	.services
 		background: url(../img/clients-background.jpg) 0 0 no-repeat
+		background-size: cover
 		.services-block1
 			margin: 0 auto
 			width: 772px
@@ -643,7 +669,7 @@ h2
 			.cost__blocks
 				font-size: 0
 				padding: 0 110px
-				.cost_block
+				.cost__block
 					display: inline-block
 					vertical-align: top
 					width: 230px
@@ -675,6 +701,7 @@ h2
 						vertical-align: middle
 						display: block
 						text-align: right
+						color: #057d9b
 						margin-bottom: 0
 						line-height: 95px
 						margin-right: 20px
@@ -831,7 +858,7 @@ h2
 				width: 980px
 				height: 320px
 				#horiz_container
-					width: 1700px
+					width: 1600px
 					text-align: justify
 					&:after
 						display: inline-block
@@ -866,7 +893,7 @@ h2
 				top: 10px
 				background-color: #a6ced7
 				#dragBar
-					width: 40px
+					width: 40px !important
 					height: 41px
 					top: -17px !important
 					background: url(../img/slider-icon.png) 0 0 no-repeat
@@ -876,6 +903,9 @@ h2
 			max-width: 100%
 			padding: 0
 			.map
+				#map-google
+					width: 100%
+					height: 400px
 				.map__adress
 					float: left
 					width: 318px
@@ -1017,19 +1047,22 @@ h2
 		background: url(../img/nav-background.jpg) 0 0 no-repeat
 		background-size: 100% 120%
 		position: fixed
-		z-index: 2
+		z-index: 5
 		width: 100%
-		display: none
+		left: -100%
 		.icon-close
 			position: absolute
 			background: url(../img/icon-close-menu.svg) 0 0 no-repeat
-			top: 20px
+			top: 25px
 			left: 30px
 			width: 25px
 			height: 25px
 			cursor: pointer
 			transform: rotate(0)
-			transition: transform .3s
+			transition: transform .6s
+			&:hover
+				transform: rotate(90deg)
+				transition: all .6s
 		.menu-list
 			padding: 0 15px
 			padding-top: 100px
@@ -1060,17 +1093,17 @@ h2
 				font-size: 32px
 				font-weight: 300
 				line-height: 32px
+				text-decoration: none
 	.ask-question-nav-mob
 		padding-bottom: 40px
 		position: fixed
 		top: 0
-		right: 0
-		left: 0
 		background-color: whitesmoke
 		opacity: 0.97
-		z-index: 2
-		display: none
-		.icon-question
+		z-index: 5
+		width: 100%
+		right: -100%
+		.icon-close
 			position: absolute
 			background: url(../img/ask-question-icon-mob.png) 0 0 no-repeat
 			top: 60px
@@ -1160,8 +1193,7 @@ h2
 				line-height: 22px
 				margin-bottom: 15px
 			.cost__head
-				opacity: 0.68
-				background-color: #057c9a
+				background-color: #08a5b4
 				height: 60px
 				p
 					transform: translateY(50%)
@@ -1224,6 +1256,20 @@ h2
 							transform: translateX(50%)
 							fill: #3d494b
 							opacity: 0.07
+				.active-block
+					background-color: #08a5b4
+					box-shadow: 0 1px 16px rgba(8, 168, 182, 0.3)
+					p
+						color: #ffffff
+					.svg-logo
+						fill: #ffffff !important
+					&:hover
+						background-color: #08a5b4
+						box-shadow: 0 1px 16px rgba(8, 168, 182, 0.3)
+						p
+							color: #ffffff
+						.svg-logo
+							fill: #ffffff !important
 			.cost-forms
 				background-color: #f2f1f1
 				text-align: center
@@ -1371,7 +1417,7 @@ h2
 				font-weight: 300
 				line-height: 32px
 				margin-bottom: 25px
-				margin-left: 20px
+				text-align: center
 			.block2-inline
 				margin-bottom: 20px
 				.counts-company
@@ -1440,14 +1486,12 @@ h2
 		.cost__head
 			opacity: 0.68
 			background-color: #057c9a
-			height: 60px
+			padding: 15px 0
 			p
-				transform: translateY(50%)
-				padding-top: 8px
 				color: white
 				font-size: 18px
 				font-weight: 300
-				line-height: 18px
+				line-height: 23px
 				text-align: center
 				font-family: "RobotoLight", sans-serif
 		.cost__blocks
@@ -1597,6 +1641,7 @@ h2
 	.employees
 		text-align: center
 		display: inline-block
+		width: 200px
 		background: #FFF
 		box-shadow: 1.5px 2.6px 22px rgba(0, 0, 0, 0.15)
 		.contacts-employees
@@ -1729,7 +1774,7 @@ h2
 					color: white
 					font-size: 19px
 					font-weight: 300
-					line-height: 44px
+					line-height: 24px
 				span
 					font-size: 15px
 					font-weight: 300
@@ -1769,6 +1814,8 @@ h2
 			display: inline-block
 			vertical-align: top
 			width: 40%
+
+	
 
 				
 		
