@@ -853,7 +853,7 @@ h2
 	.about-company
 		background: url(../img/about-company-background.jpg) 0 0 no-repeat
 		background-size: 100% 90%
-		margin-bottom:  200px
+		margin-bottom: 0
 		h1
 			color: white
 			padding-top: 80px
@@ -918,9 +918,9 @@ h2
 				top: 10px
 				background-color: #a6ced7
 				#dragBar
-					width: 40px !important
-					height: 41px
-					top: -17px !important
+					width: 28px !important
+					height: 29px
+					top: -14px !important
 					background: url(../img/slider-icon.png) 0 0 no-repeat
 	.maps
 		.wrap
@@ -928,15 +928,14 @@ h2
 			max-width: 100%
 			padding: 0
 			.map
+				position: relative
 				#map-google
 					width: 100%
-					height: 400px
+					height: 70vh
 				.map__adress
-					float: left
 					width: 318px
-					position: relative
 					.adress__photo
-						background: #a3a7a8
+						background: url(../img/maps-photo.jpg) 0 0 no-repeat
 						height: 227px
 					.adress__contacts
 						padding-left: 15px
@@ -963,7 +962,9 @@ h2
 						border-top: 20px solid #057f9c
 						border-right: 20px solid transparent
 				.map__form
-					float: right
+					position: absolute
+					top: 10%
+					right: 14%
 					width: 280px
 					margin-right: 20px
 					opacity: 0.91
@@ -1746,29 +1747,35 @@ h2
 				font-size: 40px
 			.about-company__font-size
 				font-size: 31px	
-	.employees
-		text-align: center
-		display: inline-block
-		width: 200px
-		background: #FFF
-		box-shadow: 1.5px 2.6px 22px rgba(0, 0, 0, 0.15)
-		.contacts-employees
-			padding-top: 10px
-			background: #165064
-			p
-				font-weight: 300
-				line-height: 16px
-				color: #8b979a
-				font-size: 16px
-				display: block
-				padding-bottom: 10px
-			.contacts__head
-				font-weight: 300
-				line-height: 21px
-				color: white
-				font-size: 21px
-				display: block
-				padding-bottom: 10px
+	.employees-slider
+		padding-top: 20px
+		padding-bottom: 20px
+		.employees-slider_container
+			.wrap-emp
+				text-align: center
+				.employees
+					text-align: center
+					display: inline-block
+					width: 190px
+					background: #FFF
+					box-shadow: 1.5px 2.6px 22px rgba(0, 0, 0, 0.15)
+					.contacts-employees
+						padding-top: 10px
+						background: #165064
+						p
+							font-weight: 300
+							line-height: 16px
+							color: #8b979a
+							font-size: 16px
+							display: block
+							padding-bottom: 10px
+						.contacts__head
+							font-weight: 300
+							line-height: 21px
+							color: white
+							font-size: 21px
+							display: block
+							padding-bottom: 10px
 	.maps
 		padding-bottom: 20px
 		.maps__photo
@@ -1795,6 +1802,42 @@ h2
 					color: #ffffff
 					span
 						color: #aadfed
+			#map-google-mob
+				width: 100%
+				height: 70vh
+			.map__adress
+				background: #057f9c
+				display: inline-block
+				padding: 20px 20px 20px 50px
+				position: relative
+				.adress__photo
+					position: absolute
+					top: 35px
+					left: 15px
+					background: url(../img/maps-icon2.png) 0 0 no-repeat
+					width: 20px
+					height: 26px
+				.adress__contacts
+					p
+						color: white
+						font-size: 19px
+						font-weight: 300
+						line-height: 24px
+					span
+						font-size: 15px
+						font-weight: 300
+						line-height: 24px
+						color: white
+				.marker
+					position: absolute
+					content: ""
+					width: 0
+					height: 0
+					bottom: -19px
+					left: 45px
+					// border-left: 20px solid transparent
+					// border-top: 20px solid #057f9c
+					// border-right: 20px solid transparent
 			.maps-question
 				opacity: 0.87
 				background-color: rgba(30, 67, 76, 0.49)
@@ -1865,39 +1908,7 @@ h2
 						font-size: 33px
 						font-weight: 300
 						line-height: 33px
-		.maps__adress
-			background: #057f9c
-			display: inline-block
-			padding: 20px 20px 20px 50px
-			position: relative
-			.adress__photo
-				position: absolute
-				top: 35px
-				left: 15px
-				background: url(../img/maps-icon2.png) 0 0 no-repeat
-				width: 20px
-				height: 26px
-			.adress__contacts
-				p
-					color: white
-					font-size: 19px
-					font-weight: 300
-					line-height: 24px
-				span
-					font-size: 15px
-					font-weight: 300
-					line-height: 24px
-					color: white
-			.marker
-				position: absolute
-				content: ""
-				width: 0
-				height: 0
-				bottom: -19px
-				left: 45px
-				border-left: 20px solid transparent
-				border-top: 20px solid #057f9c
-				border-right: 20px solid transparent
+		
 	.footer
 		background: #057f9c
 		color: #ffffff
