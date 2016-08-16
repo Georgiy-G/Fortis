@@ -929,9 +929,117 @@ h2
 		max-width: 100%
 		padding: 0
 		position: relative
+		.maps__photo-mob
+			img
+				width: 100%		
+		.maps__contacts-mob
+			padding-top: 20px
+			padding-bottom: 20px
+			padding-left: 90px
+			position: relative
+			background: #1e434c
+			.maps__icon
+				position: absolute
+				top: 21px
+				left: 38px
+				background: url(../img/maps-icon.png) 0 0 no-repeat
+				width: 30px
+				height: 34px
+			p
+				font-size: 18px
+				font-weight: 300
+				line-height: 23px
+				color: #ffffff
+				span
+					color: #aadfed
 		#map-google
 			width: 100%
 			height: 70vh
+		.maps-question-wrap
+			position: relative
+			.maps-question-mob
+				width: 100%
+				top: -62px
+				left: 0
+				opacity: 0.87
+				background-color: rgba(30, 67, 76, 0.79)
+				color: #fff
+				text-align: center
+				padding-top: 20px
+				padding-bottom: 20px
+				position: absolute
+				.question-icon
+					position: absolute
+					top: 16px
+					left: 30px
+					background: url(../img/map-question.png) 0 0 no-repeat
+					width: 41px
+					height: 29px
+				.question-icon2
+					position: absolute
+					top: 29px
+					right: 70px
+					background: url(../img/map-question2.png) 0 0 no-repeat
+					width: 13px
+					height: 9px
+				.question-icon2-active
+					position: absolute
+					top: 29px
+					right: 70px
+					background: url(../img/map-question2-active.png) 0 0 no-repeat
+					width: 13px
+					height: 9px
+				p
+					color: white
+					font-size: 26px
+					font-weight: 300
+					line-height: 24px
+		.maps-question-form
+			background-color: #f2f4f7
+			text-align: center
+			padding-top: 20px
+			display: none !important
+			input
+				color: #4a4949
+				font-size: 20px
+				font-weight: 300
+				line-height: 20px
+				width: 260px
+				outline: none
+				border: none
+				border-bottom: 1px solid #cacaca
+				padding: 20px
+				margin-bottom: 20px
+				background-color: whitesmoke
+				opacity: 0.94
+			input[type="submit"]
+				width: 201px
+				height: 52px
+				background-color: #057a99
+				background-image: linear-gradient(to right, #057a99 0%, #09b1bb 100%)
+				box-shadow: 0 7px 27px rgba(0, 113, 143, 0.43)
+				color: white
+				font-size: 19px
+				font-weight: 300
+				line-height: 44px
+				padding: 0
+				border-radius: 50px
+				margin-top: 30px
+				border: none
+				transition: box-shadow 2s
+				&:active
+					box-shadow: 0 7px 27px rgba(0, 113, 143, 1)
+			.maps-question-phone
+				background: #057f9c
+				padding: 20px 0
+				text-align: center
+				a
+					color: white
+					font-size: 33px
+					font-weight: 300
+					line-height: 33px
+		.maps-question-form-active
+			display: block !important
 		.map__adress
 			width: 318px
 			.adress__photo
@@ -1790,140 +1898,7 @@ h2
 						border-radius: 50%
 						width: auto
 						height: auto
-.maps
-	padding-bottom: 20px
-	.maps__photo
-		img
-			width: 100%
-	.maps__info
-		background: #1e434c
-		.maps__contacts
-			padding-top: 20px
-			padding-bottom: 20px
-			padding-left: 90px
-			position: relative
-			.maps__icon
-				position: absolute
-				top: 21px
-				left: 38px
-				background: url(../img/maps-icon.png) 0 0 no-repeat
-				width: 30px
-				height: 34px
-			p
-				font-size: 18px
-				font-weight: 300
-				line-height: 23px
-				color: #ffffff
-				span
-					color: #aadfed
-		#map-google
-			width: 100%
-			height: 70vh
-			.gm-style-iw
-				width: auto
-		.map__adress
-			background: #057f9c
-			display: inline-block
-			padding: 20px 20px 20px 50px
-			position: relative
-			.adress__photo
-				position: absolute
-				top: 35px
-				left: 15px
-				background: url(../img/maps-icon2.png) 0 0 no-repeat
-				width: 20px
-				height: 26px
-			.adress__contacts
-				p
-					color: white
-					font-size: 16px
-					font-weight: 300
-					line-height: 20px
-				span
-					font-size: 13px
-					font-weight: 300
-					line-height: 18px
-					color: white
-			.marker
-				position: absolute
-				content: ""
-				width: 0
-				height: 0
-				bottom: -19px
-				left: 45px
-				// border-left: 20px solid transparent
-				// border-top: 20px solid #057f9c
-				// border-right: 20px solid transparent
-		.maps-question
-			opacity: 0.87
-			background-color: rgba(30, 67, 76, 0.49)
-			color: #fff
-			text-align: center
-			padding-top: 20px
-			padding-bottom: 20px
-			position: relative
-			.question-icon
-				position: absolute
-				top: 16px
-				left: 30px
-				background: url(../img/map-question.png) 0 0 no-repeat
-				width: 41px
-				height: 29px
-			.question-icon2
-				position: absolute
-				top: 29px
-				right: 70px
-				background: url(../img/map-question2.png) 0 0 no-repeat
-				width: 13px
-				height: 9px
-			p
-				color: white
-				font-size: 26px
-				font-weight: 300
-				line-height: 24px
-		.maps-question-form
-			background-color: #f2f4f7
-			text-align: center
-			padding-top: 20px
-			input
-				color: #4a4949
-				font-size: 20px
-				font-weight: 300
-				line-height: 20px
-				width: 260px
-				outline: none
-				border: none
-				border-bottom: 1px solid #cacaca
-				padding: 20px
-				margin-bottom: 20px
-				background-color: whitesmoke
-				opacity: 0.94
-			input[type="submit"]
-				width: 201px
-				height: 52px
-				background-color: #057a99
-				background-image: linear-gradient(to right, #057a99 0%, #09b1bb 100%)
-				box-shadow: 0 7px 27px rgba(0, 113, 143, 0.43)
-				color: white
-				font-size: 19px
-				font-weight: 300
-				line-height: 44px
-				padding: 0
-				border-radius: 50px
-				margin-top: 30px
-				border: none
-				transition: box-shadow 2s
-				&:active
-					box-shadow: 0 7px 27px rgba(0, 113, 143, 1)
-			.maps-question-phone
-				background: #057f9c
-				padding: 20px 0
-				text-align: center
-				a
-					color: white
-					font-size: 33px
-					font-weight: 300
-					line-height: 33px
+
 	
 .footer-mob
 	background: #057f9c

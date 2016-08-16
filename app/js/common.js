@@ -85,5 +85,10 @@ $(function() {
 		nextArrow: '<div class="slick-arrow slick-next"></div>',
 		slidesToScroll: 1,
 	});
+	//map-question
+	$(".maps-question-mob").click(function () {
+		$(".maps-question-form").toggleClass("maps-question-form-active");
+		$(".question-icon2").toggleClass("question-icon2-active");
+	});
 
 });

@@ -1039,19 +1039,20 @@
 				<div class="maps__photo-mob visible-xs">
 					<img src="img/maps-photo.jpg" alt="">
 				</div>
-
-				<div class="maps__info-mob visible-xs">
-					<div class="maps__contacts">
-						<span class="maps__icon"></span>
-						<p>Адрес:<br>
-						<span>г. Москва, ул. Красная Пресня д. 22</span></p>
-					</div>
-					<div class="maps-question-mob visible-xs">
+				<div class="maps__contacts-mob visible-xs">
+					<span class="maps__icon"></span>
+					<p>Адрес:<br>
+					<span>г. Москва, ул. Красная Пресня д. 22</span></p>
+				</div>
+				<div id="map-google"></div>
+				<div class="maps-question-wrap visible-xs">
+					<div class="maps-question-mob">
 						<span class="question-icon"></span>
 						<span class="question-icon2"></span>
 						<p>Задать вопрос</p>
 					</div>
-					<div class="maps-question-form visible-xs">
+				</div>
+				<div class="maps-question-form visible-xs">
 						<form method="POST">
 							<input type="text" class="name" placeholder="Введите имя" name="name" required><br>
 							<input type="phone" class="phone" placeholder="Введите телефон" name="phone" required><br>
@@ -1061,11 +1062,7 @@
 						<div class="maps-question-phone">
 							<a href="tel:+84952235511">8 495 223 55 11</a>
 						</div>
-					</div>
 				</div>
-
-				<div id="map-google"></div>
-
 				<div class="map__form hidden-xs">
 					<p>Остались вопросы? Пишите</p>
 					<form method="POST">
@@ -1127,7 +1124,7 @@
 		  var customMapTypeId = 'custom_style';
 		  var myLatlng = new google.maps.LatLng(55.753326, 37.617374);
 		  var map = new google.maps.Map(document.getElementById('map-google'), {
-		    zoom: 14,
+		    zoom: 13,
 		    center: {lat: 55.753326, lng: 37.617374},
 		    mapTypeControlOptions: {
 		      mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
